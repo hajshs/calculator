@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: 'Heebo', sans-serif;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+#bg {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+}
+
+#main {
+    display: flex;
+    flex-direction: column;
+    height: 650px;
+    width: 400px;
+    border: 1px solid;
+    border-radius: 25px;
+    background-color: #FFC8DD;
+    justify-content: center;
+    align-items: center;
+}
+
+#result {
+    
+    position: relative;
+    display: flex;
+    border: 0px solid;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    height: 100px;
+    width: 350px;
+    top: -1%;
+    align-items: flex-end;
+    justify-content: flex-end;
+    font-size: 60px;
+}
+
+#buttons {
+    display: grid;
+    position: relative;
+    height: 450px;
+    width: 350px;
+    top: 2.5%;
+    grid-template-columns: 25% 25% 25% 25%;
+    justify-content: center;
+    align-items: center;
+}
+
+#clearB, #moduB, #poweB, #divB, #sevB, #eigB, #ninB, #multB, #fourB, #fiveB, #sixB, #minuB, #oneB, #twoB, #threB, #plusB, #decB, #totB{
+    display: flex;
+    height: 70px;
+    width: 72px;
+    border: 1px solid;
+    border-radius: 150px;
+    margin-left: 8px;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+#zeroB {
+    display: flex;
+    height: 90px;
+    width: 155px;
+    border: 1px solid;
+    border-radius: 150px;
+    grid-column: span 2;
+    margin-left: 8px;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.numB:hover, .eqB:hover {
+    opacity: 60%;
+}
+
+.numB {
+    background-color: #BDE0FE;
+}
+
+.eqB {
+    background-color: #A2D2FF;
+}
